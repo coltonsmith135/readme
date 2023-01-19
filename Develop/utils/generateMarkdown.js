@@ -37,6 +37,11 @@ ${renderLicenseLink(data.License)}
 
 ${data.Installation}
 
+## contact info
+
+${data.Email}
+${data.Contact}
+
 ## usage
 
 ${data.Usage}

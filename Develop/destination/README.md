@@ -1,9 +1,9 @@
-# dddd
-https://github.com/ddd/dddd 
-![badge](https://img.shields.io/github/last-commit/ddd/sss)
+# readme-file-generator
+https://github.com/coltonsmith135/readme-file-generator 
+![badge](https://img.shields.io/github/last-commit/coltonsmith135/readme-file-generator)
 ![badge](https://img.shields.io/badges/license-MIT-red.svg)
 # Description
-ssss
+It is a program designed to create a readme file to save the developer time
 # Table of Contents
 * [Installation] (#installation)
 * [Usage] (#usage)
@@ -17,11 +17,16 @@ ssss
 
 ## installation
 
-aaaa
+node, fs, inquirer
+
+## contact info
+
+coltonsmith135@yahoo.com
+503-432-0228
 
 ## usage
 
-dddd
+It is used to create a readme file using node
 
 
  ## license
@@ -30,9 +35,9 @@ dddd
 
 ## credits
 
-sss
+Colton Smith
 
 ## tests
 
-aaa
+running it through node
 

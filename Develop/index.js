@@ -1,11 +1,13 @@
 
+// variables needed to run node and use the input.
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
 
+// links generateMarkdown file to connect them together.
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
+// Questions to prompt the user 
 const questions = [{
     type: 'input',
     message: 'What is the title of the project?',
@@ -29,7 +31,7 @@ const questions = [{
 },
 {
     type:'input',
-    message:'cotact info for inquiries.',
+    message:'Contact info for inquiries.',
     name:'Contact'
 },
 {
@@ -67,7 +69,7 @@ const questions = [{
 
 
 
-
+// function to create and write the file after running through node.
 function writeToFile(fileName, data) { 
   fs.writeFile(fileName, data, (err) => {
     err ? console.log(err) : console.log('Congratulations on creating your own README file.')
@@ -75,7 +77,7 @@ function writeToFile(fileName, data) {
     
 }
 
-
+// function to initialize program and generate the readme file.
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
