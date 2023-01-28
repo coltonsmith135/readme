@@ -1,17 +1,17 @@
-
-function renderLicenseBadge(license) {
-  return `![badge](https://img.shields.io/badges/license-${license}-red.svg)`;
+function renderLicenseBadge(License) {
+  return `[![License: MIT](https://img.shields.io/badge/License-${License}-yellow.svg)](https://opensource.org/licenses/MIT)`;
 }
 
 
-function renderLicenseLink(license) {
-  return `\n * [License] (#license)\n`;
+function renderLicenseLink() {
+  return `\n * [License](#License)\n`;
+  
 }
 
 
-function renderLicenseSection(license) {
-  return `\n ## license\n
-  ${license}`;
+function renderLicenseSection(License) {
+  return `\n ## License\n
+  ${License}`;
 }
 
 
@@ -19,17 +19,16 @@ function generateMarkdown(data) {
 
 
   return `# ${data.Title}
-https://github.com/${data.Github}/${data.Title} 
-![badge](https://img.shields.io/github/last-commit/${data.Github}/${data.Repo})
+https://github.com/${data.Github}/${data.Title}
 ${renderLicenseBadge(data.License)}
 # Description
 ${data.Description}
-# Table of Contents
-* [Installation] (#installation)
-* [Usage] (#usage)
+# Table of Contents:
+* [Installation](#installation)
+* [Usage](#usage)
 ${renderLicenseLink(data.License)}
-* [Credits] (#credits)
-* [Tests] (#tests)
+* [Credits](#credits)
+* [Tests](#tests)
 
 
 
@@ -40,6 +39,7 @@ ${data.Installation}
 ## contact info
 
 ${data.Email}
+
 ${data.Contact}
 
 ## usage
