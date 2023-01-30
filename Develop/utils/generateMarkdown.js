@@ -10,7 +10,7 @@ function renderLicenseLink() {
 
 
 function renderLicenseSection(License) {
-  return `\n ## License\n
+  return `\n## License\n
   ${License}`;
 }
 

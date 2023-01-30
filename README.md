@@ -15,3 +15,9 @@ I learned how to use node.js to create a program that will interact with the use
 ## Installation
 
 you will need to have node installed for this program
+
+Link to preview video
+
+https://drive.google.com/file/d/1DyzVCVDmbc5JZ7bLBB7a1c3cwufUpqwj/view
+
+![README picture](Develop/utils/readme-sample.png)
